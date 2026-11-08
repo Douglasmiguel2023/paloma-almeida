@@ -53,12 +53,12 @@
   @keyframes fall{0%{transform:translate3d(0,-6vh,0) rotate(0deg)}25%{transform:translate3d(3.2vw,26vh,0) rotate(95deg)}50%{transform:translate3d(-2.4vw,54vh,0) rotate(185deg)}75%{transform:translate3d(2.6vw,80vh,0) rotate(272deg)}100%{transform:translate3d(-1.6vw,108vh,0) rotate(360deg)}}
   .page{position:relative;z-index:2;max-width:520px;margin:0 auto;padding:20px 20px 44px;display:flex;flex-direction:column;align-items:center}
   .brand{text-align:center;animation:rise .9s ease both}
-  .brand h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(27px,7.6vw,36px);letter-spacing:.18em;line-height:1.05;color:var(--wine);text-shadow:0 1px 0 rgba(255,255,255,.7)}
+  .brand h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(21px,5.8vw,28px);letter-spacing:.16em;line-height:1.05;color:var(--wine);text-shadow:0 1px 0 rgba(255,255,255,.7)}
   .brand .rule{display:flex;align-items:center;gap:10px;justify-content:center;margin:8px auto 7px;width:min(210px,58vw)}
   .brand .rule::before,.brand .rule::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--rose-mid),transparent)}
   .brand .rule span{width:5px;height:5px;background:var(--rose-mid);transform:rotate(45deg);flex:none}
-  .brand p{font-size:9.5px;font-weight:600;letter-spacing:.3em;color:var(--rose-mid);text-transform:uppercase}
-  .brand .handle{margin-top:6px;font-size:11px;letter-spacing:.06em;color:var(--wine-soft);font-weight:500}
+  .brand p{font-size:8.5px;font-weight:600;letter-spacing:.28em;color:var(--rose-mid);text-transform:uppercase}
+  .brand .handle{margin-top:5px;font-size:10px;letter-spacing:.06em;color:var(--wine-soft);font-weight:500}
   .stage{position:relative;width:100%;display:flex;justify-content:center;margin-top:18px;animation:rise .9s .12s ease both;isolation:isolate}
   .arch-wrap{position:relative;width:min(148px,40vw);z-index:3}
   .arch{position:relative;border-radius:50%;padding:12px;background:linear-gradient(160deg, rgba(255,255,255,.45), rgba(200,164,159,.18));border:1.5px solid var(--rose-mid);box-shadow:0 0 55px rgba(200,164,159,.55), 0 24px 48px rgba(77,14,19,.18), inset 0 1px 0 rgba(255,255,255,.75)}
@@ -77,13 +77,13 @@
   .dots{display:flex;gap:8px;justify-content:center;margin-top:16px}
   .dots button{width:8px;height:8px;border-radius:50%;border:1px solid var(--rose-mid);background:transparent;cursor:pointer;padding:0;transition:all .3s}
   .dots button.active{background:var(--rose-mid);width:22px;border-radius:99px}
-  .bands{position:absolute;left:calc(50% - 50vw);bottom:34px;width:100vw;height:100px;pointer-events:none}
-  .band{position:absolute;left:-4%;width:108%;overflow:hidden;white-space:nowrap;padding:14px 0}
-  .band.back{top:0;transform:rotate(1.8deg);z-index:1;background:linear-gradient(180deg, #C8A49F, var(--rose-mid));box-shadow:0 10px 22px rgba(77,14,19,.22);filter:blur(1.2px)}
-  .band.front{top:42px;transform:rotate(-1.6deg);z-index:6;background:linear-gradient(180deg, #EFE0CE, var(--rose-light) 55%, #C8A49F);box-shadow:0 14px 28px rgba(77,14,19,.26)}
+  .bands{position:absolute;left:calc(50% - 50vw);bottom:14px;width:100vw;height:64px;pointer-events:none}
+  .band{position:absolute;left:-4%;width:108%;overflow:hidden;white-space:nowrap;padding:7px 0}
+  .band.back{top:0;transform:rotate(1.8deg);z-index:1;background:linear-gradient(180deg, #C8A49F, var(--rose-mid));box-shadow:0 8px 18px rgba(77,14,19,.22);filter:blur(1.2px)}
+  .band.front{top:28px;transform:rotate(-1.6deg);z-index:6;background:linear-gradient(180deg, #EFE0CE, var(--rose-light) 55%, #C8A49F);box-shadow:0 10px 22px rgba(77,14,19,.26)}
   .band .track{display:inline-flex;animation:scrollX 30s linear infinite;will-change:transform}
   .band.back .track{animation-duration:38s;animation-direction:reverse}
-  .band span{font-family:'Cormorant Garamond',serif;font-weight:700;letter-spacing:.28em;font-size:17px;padding-right:.6em;text-transform:uppercase}
+  .band span{font-family:'Cormorant Garamond',serif;font-weight:700;letter-spacing:.24em;font-size:12.5px;padding-right:.6em;text-transform:uppercase}
   .band.front span{color:var(--wine-deep)}
   .band.back span{color:#fff}
   @keyframes scrollX{from{transform:translateX(0)}to{transform:translateX(-50%)}}
